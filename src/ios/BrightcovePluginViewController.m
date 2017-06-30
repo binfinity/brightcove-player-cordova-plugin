@@ -171,7 +171,7 @@ NSString * progressString = nil;
 {
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
 
-    [self.catalogService findVideoWithReferenceID:self.kViewControllerPlaylistID parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
+    [self.catalogService findVideoWithVideoID:self.kViewControllerPlaylistID parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
 
         if (video)
         {

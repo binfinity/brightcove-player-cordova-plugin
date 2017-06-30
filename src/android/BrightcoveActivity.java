@@ -129,7 +129,7 @@ public class BrightcoveActivity extends BrightcovePlayer {
 
     this.fullScreen();
     Catalog catalog = new Catalog(token);
-    catalog.findVideoByReferenceID(videoId, new VideoListener() {
+    catalog.findVideoByID(videoId, new VideoListener() {
       public void onVideo(Video video) {
         brightcoveVideoView.add(video);
         brightcoveVideoView.start();
